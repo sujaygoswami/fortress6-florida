@@ -1,0 +1,118 @@
+#florida-logo {
+    cursor: pointer
+}
+
+#header-logo-txt {
+    line-height: 18px
+}
+
+.header-logo-txt-sub-span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    color: #fff;
+    font-family: 'Futura';
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 11px
+}
+
+#header-logo-txt-sub-florida {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    color: #fff;
+    font-family: 'Futura';
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 13px
+}
+
+#header-logo-txt {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    color: #fff;
+    font-family: 'Futura';
+    font-weight: 700;
+    font-size: 32px
+}
+
+.header-logo-txt-hide {
+    margin-left: -355px;
+    animation: slideout 3s;
+    -webkit-animation: slideout 3s;
+    animation-iteration-count: 1
+}
+
+.header-logo-txt-sub-hide {
+    margin-left: -355px;
+    animation: slideout 2s;
+    -webkit-animation: slideout 2s;
+    animation-iteration-count: 1
+}
+
+.header-logo-txt-show {
+    animation: slidein 2s;
+    animation-iteration-count: 1
+}
+
+.header-logo-txt-sub-show {
+    animation: slidein 3s;
+    animation-iteration-count: 1
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -400px
+    }
+
+    20% {
+        margin-left: -400px
+    }
+
+    35% {
+        margin-left: 0
+    }
+
+    100% {
+        margin-left: 0
+    }
+}
+
+@keyframes slideout {
+    0% {
+        margin-left: 0
+    }
+
+    20% {
+        margin-left: 0
+    }
+
+    35% {
+        margin-left: -400px
+    }
+
+    100% {
+        margin-left: -400px
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #header-logo-txt {
+        line-height: 12px
+    }
+
+    #header-logo-txt-sub-entertainment {
+        font-size: 8px !important;
+        letter-spacing: 8px !important
+    }
+
+    #header-logo-txt-sub-florida {
+        font-size: 11px !important;
+        letter-spacing: 8px !important
+    }
+}

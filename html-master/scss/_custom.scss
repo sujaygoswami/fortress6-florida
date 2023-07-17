@@ -1,0 +1,114 @@
+div.wpforms-container-full .wpforms-form .h-captcha,
+#wpforo #wpforo-wrap div .h-captcha,
+.h-captcha {
+	position: relative;
+	display: block;
+	margin-bottom: 2rem;
+}
+
+#wpforo #wpforo-wrap.wpft-topic div .h-captcha,
+#wpforo #wpforo-wrap.wpft-forum div .h-captcha {
+	margin: 0 -20px;
+}
+
+div.wpforms-container-full .wpforms-form .h-captcha[data-size="normal"],
+.h-captcha[data-size="normal"] {
+	width: 303px;
+	height: 78px;
+}
+
+div.wpforms-container-full .wpforms-form .h-captcha[data-size="compact"],
+.h-captcha[data-size="compact"] {
+	width: 164px;
+	height: 144px;
+}
+
+div.wpforms-container-full .wpforms-form .h-captcha[data-size="invisible"],
+.h-captcha[data-size="invisible"] {
+	display: none;
+}
+
+.h-captcha::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(https://www.floridatv-entertainment.de/wp-content/plugins/hcaptcha-for-forms-and-more/assets/images/hcaptcha-div-logo.svg) no-repeat;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.h-captcha[data-size="normal"]::before {
+	width: 300px;
+	height: 74px;
+	background-position: 94% 27%;
+}
+
+.h-captcha[data-size="compact"]::before {
+	width: 156px;
+	height: 136px;
+	background-position: 50% 77%;
+}
+
+.h-captcha[data-theme="light"]::before {
+	background-color: #fafafa;
+	border: 1px solid #e0e0e0;
+}
+
+.h-captcha[data-theme="dark"]::before {
+	background-color: #333;
+	border: 1px solid #f5f5f5;
+}
+
+.h-captcha[data-size="invisible"]::before {
+	display: none;
+}
+
+div.wpforms-container-full .wpforms-form .h-captcha iframe,
+.h-captcha iframe {
+	position: relative;
+}
+
+span[data-name="hcap-cf7"] .h-captcha {
+	margin-bottom: 0;
+}
+
+span[data-name="hcap-cf7"]~input[type="submit"] {
+	margin-top: 2rem;
+}
+
+.elementor-field-type-hcaptcha .elementor-field {
+	background: transparent !important;
+}
+
+.elementor-field-type-hcaptcha .h-captcha {
+	margin-bottom: unset;
+}
+
+div[style*="z-index: 2147483647"] div[style*="border-width: 11px"][style*="position: absolute"][style*="pointer-events: none"] {
+	border-style: none;
+}
+
+
+
+
+label[for="form-field-bewerbung"] {
+	margin-bottom: 20px;
+}
+
+
+.filter-produzenten:hover {
+	transform: scale(1.05) !important;
+	transition: all 200ms ease-in;
+}
+
+.filter-produzenten {
+	transition: all 200ms ease-in;
+}
+
+
+/******** footer *******/
+footer#site-footer {
+	display: none;
+}

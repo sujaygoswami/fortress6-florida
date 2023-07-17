@@ -1,0 +1,754 @@
+<!doctype html>
+<html class="no-js" lang="de">
+	<head>
+		<meta charset="UTF-8">
+		
+				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="format-detection" content="telephone=no">
+
+		
+		<title>TV Show Tickets online buchen - tvtickets.de</title>
+
+		<meta name="title" content="TV Show Tickets online buchen - tvtickets.de">
+		<meta name="description" content="tvtickets.de - Buche bei uns dein Ticket für verschiedene bekannte Fernseh-Sendungen. Erlebe TV Shows live und in Farbe. Von The Voice of Germany bis Anne Will">
+		<meta name="author" content="tvtickets.de">
+		<meta name="copyright" content="tvtickets.de">
+		<meta name="robots" content="INDEX,FOLLOW">
+
+		<link rel="shortcut icon" href="tvtickets_favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="tvtickets_favicon.ico" type="image/x-icon" />
+
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/foundation.min.css" />
+		<link rel="stylesheet" href="css/eticker_juk.css" />
+		<link rel="stylesheet" href="slick/slick.css" />
+		<link rel="stylesheet" href="/foundation-icons/font-awesome/css/font-awesome.min.css">
+
+		<script src="js/jquery-min.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/foundation-datepicker.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script type="text/javascript" src="countdown_v5/countdown.js"></script>
+		<script type="text/javascript"> document.write('<link href="css/custom_global_juk.css?1ef807780106e75119722cb1ae5808b9" rel="stylesheet" type="text/css">'); </script><script type="text/javascript"> document.write('<link href="css/min_optanon.css?1240137094b63b535031351bfbd03de9" rel="stylesheet" type="text/css">'); </script>
+		<script src="js/jquery.bxslider.js"></script>
+		<script src="js/clock_digital.js"></script>
+
+		<link href="css/ticker-style.css" rel="stylesheet" type="text/css" />
+		<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+		<link href="css/clock.css" rel="stylesheet" type="text/css" />
+
+			</head>
+
+	<body>
+
+	<!-- Message for users whose browser doesn't support Javascript -->
+	<noscript>
+	<div style="background:#000;margin:0em auto;text-align:center"><img src="img/logo.png" alt="TVTiCKETS.de"></div>
+<div class="" style="background:#000000;color:#fff;width:500px;	-webkit-border-radius: 0.3em;
+	border-radius: 0.3em !important; margin:2em auto;text-align:center;padding:2em;">
+
+<p style="font-size:1em;color:#fff;">Um unsere Webseite zu nutzen, benötigen Sie JavaScript.<br>
+Eine Anleitung, wie Sie JavaScript in Ihrem Browser einschalten, befindet sich
+<a href="http://www.enable-javascript.com/de/" target="_blank" style="color:#000">hier</a>.</p>
+<p style="font-size:1em;color:#fff;">HOTLINE<br>
+Sie haben Fragen oder möchten Tickets?<br>
+MO - FR: 10:00 - 20:00 Uhr<br><br>
+Rufen Sie uns an!<br>
+TEL.: 02233-96364-0<br>
+TEL.: 030-536064-0<br>
+</p>
+</div>
+	</noscript>
+
+	<script>
+		Element.prototype.remove = function() {
+    		this.parentElement.removeChild(this);
+		}
+		NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+		    for(var i = 0, len = this.length; i < len; i++) {
+		        if(this[i] && this[i].parentElement) {
+		            this[i].parentElement.removeChild(this[i]);
+		        }
+		    }
+		}
+	</script>
+
+	<div id="responsive-page" style="display:none;">
+		<script>
+			$('div#responsive-page').css('display', '');
+			//getElementById('responsive-page').style.display = '';
+		</script>
+
+		<!-- Start Top Bar -->
+	 	<div class="nav fixed">
+						<div class="cookie_disclaimer optanon-alert-box-wrapper" role="alertdialog">
+				<div class="disclaimer_hinweis" style="optanon-alert-box-bg">
+					<br>
+					<br>
+					<span>Wir verwenden Cookies,<br> um Ihnen ein bestmögliches Nutzererlebnis zu bieten und Sie optimal zu beraten.<br>Wenn Sie zustimmen, erklären Sie sich mit der Verwendung unserer Cookies einverstanden,<br>wobei Sie Ihre Einwilligung jederzeit widerrufen können.<br>
+						<br>
+						<a href="datenschutz.php" title="Lesen Sie unsere Datenschutzrichtlinie">Weitere Informationen erhalten Sie hier in der Datenschutzrichtlinie</a>
+						<br>
+						<br>
+						<a id="cookies_standard" name="cookies_standard" onclick="f_cookie_standard()" class="button btn-big-2" style="background-color:#000">Nur notwendige Cookies</a>&nbsp;&nbsp;
+						<a id="cookies_marketing" name="cookies_marketing" onclick="f_cookie_marketing()" class="button btn-big-2" style="background-color:#000">Marketing-Cookies (optional)</a>
+						<br><br>
+					</span>
+				</div>
+
+				<div class="close_x">
+					<span class="closer">
+						<a href="javascript:void(0);" class="close btn">x</a>
+					</span>
+				</div>
+			</div>
+			<div id="optanon" class="modern">
+				<div id="optanon-popup-bg" style="z-index:7000; display:block">
+				</div>
+			</div>
+			
+			<nav class="top-bar" data-topbar>
+
+		    <ul class="title-area">
+				<li class="name" style="background-color: #000">
+					<a href="index.php"><img style="width: 160px" src="img/tvtickets-logo-1-s.svg" title="TVTiCKETS.de">&nbsp;</a>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+			</ul>
+
+		    <section class="top-bar-section">
+				<!-- Start Search 
+				<ul class="left">
+						<li class="has-form show-for-large-up"> 
+							<div class="row">
+								<div class="large-10 small-10 columns search_field_wide">
+									<input id="searchstring" type="text" placeholder="Sendung, Ort, Moderator" class="radius">
+								</div>
+								<a id="searchbutton">
+									<span class="large-2 small-2 columns search_button" style="">
+										<img  src="img/lupe.png" alt="">
+									</span>
+								</a>
+							</div>
+						</li>
+
+						<li class="has-form show-for-medium-down"> 
+							<div class="row">
+								<div class="large-10 small-10 columns search_field">
+									<input id="searchstringsmall" type="text" placeholder="Sendung, Ort, Moderator" class="radius">
+								</div>
+								<a id="searchbuttonsmall">
+									<span class="large-2 small-2 columns search_button" style="">
+										<img  src="img/lupe.png" alt="">
+									</span>
+								</a>
+							</div>
+						</li>
+			        <li class="">
+						<a href="tickets.php">Tickets von A-Z</a>
+						</li>
+				</ul>
+				 End Search -->
+		    	<!-- Right Nav Section -->
+		      	<ul class="right">
+			        <li class="">
+			        	<a href="index.php">Home</a>
+			        </li>
+					<li class="divider"></li>
+					<li>
+											</li>
+					<li class="divider"></li>
+					<!--
+					<li class="divider"></li>
+					<li>
+						<a href="referenzen.php">Referenzen</a>
+					</li>-->
+<!--
+					<li class="">
+						<a href="kontakt.php">Kontakt</a>
+					</li>
+					-->
+		      	</ul>
+		    </section>
+		  </nav>
+
+		  	  </div>
+	  <!-- End Top Bar -->
+
+	  <div id="content">
+
+
+
+<!-- BEGINN small-only -->
+<div class="show-for-small-only" >
+    <div class="row">
+    <div class="columns" style="z-index: 15">
+      <div>
+        <img src="/img/juk/dudw_start.jpg">
+      </div>
+    </div>
+    <div class="columns" style="margin-top: 2em;">
+      <div style="margin-top: 0.5em;margin-left: 0.5em">
+        <h1 style="font-size: 24.5px">Das Duell um die Welt</h1><br>
+        <p style="font-size:1.2em;line-height: 1.5em !important;">
+          <span class="p-header-text">Um alle zukünftigen Infos zu neuen Terminen von Joko und Klaas zu erhalten, trage dich in unseren eTicker ein und sichere dir so als Erster deine Tickets!</span><br>
+        </p>
+        <a href="#eticker-juk-s">
+        <div class="button btn-juk-normal">zum eTicker</div></a>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="background-color: #fff;">
+    <div class="columns" style="margin-top: 2.5em">
+      <h2 style="text-transform: uppercase;font-size: 24px;font-weight: 700">Das Duell um die Welt - Tickets & Termine</h2><br>
+      <p style="font-size:14px;line-height: 1.5em;font-weight: normal;letter-spacing: 0.05em;margin-top: -1.5em">
+        Seit zehn Jahren „Duell um die Welt“ gehen Joko & Klaas an ihr Schmerzgrenzen und darüber hinaus. Nun geht der große Zweikampf in die nächste Runde. In den neuen Folgen des Show-Events "Das Duell um die Welt – Team Joko gegen Team Klaas" schicken Joko Winterscheidt und Klaas Heufer-Umlauf wieder zahlreiche Prominente rund um den Erdball. Ob und wie sehr es die mutigen Promis bereuen, sich in die Dienste von Joko oder Klaas zu stellen, kannst du in den kommenden Folgen vor Ort hautnah miterleben. Zu den waghalsigen Missionen rund um den Erdball treten zwar die jeweiligen Team-Mitglieder von Joko und Klaas an, doch die Entscheidung um den Weltmeistertitel fällt jeweils live im Studio in einem direkten Duell zwischen den beiden Haudegen. Damit während der Show sowie im Finale zwischen Joko und Klaas alles mit rechten Dingen zugeht, führt Moderatorin Jeannine Michaelsen durch die Show. 
+      </p>
+        <div class="row">
+          <div class="small-2 columns">
+            <img class="picto" style="max-width: 45px;padding: 7px 8px 0px 5px" src="/img/juk/picto/triangle_pink.jpg">
+          </div>
+          <div class="small-10 columns">
+            <p>
+              <span class="p-headline">Wichtiger Zusatz</span><br>
+			Eintritt ab 16 Jahren. Unter 16 Jahren kein Einlass.
+              Aufgrund der hohen Nachfrage und im Sinne der Gleichberechtigung ist pro Person/pro Staffel nur ein Besuch möglich. Produktionsbedingt sind nur einmalig bis zu 2 Tickets buchbar. Es gibt erhöhte Sicherheitskontrollen, so dass keine Jacken, Taschen, Handys als auch Fotoapparate mit ins Studio genommen werden dürfen und müssen an der Garderobe abgegeben werden. Wir bitten um euer Verständnis. 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-2 columns">
+            <img class="picto" style="max-width: 45px;padding: 7px 8px 0px 5px" src="/img/juk/picto/heart_pink.jpg">
+          </div>
+          <div class="small-10 columns">
+            <p style="font-size:0.9em;line-height: 1.5em;font-weight: normal;letter-spacing: 0.05em;">
+              <span class="p-headline">Für den Besuch im Studio gilt folgende Regel:</span><br>
+              Es gelten weder auf dem Studiogelände noch im Studio Beschränkungen.<br>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-2 columns">
+            <img class="picto" style="max-width: 40px;padding: 7px 4px 0px 12px;" src="/img/juk/picto/needle_pink.jpg">
+          </div>
+          <div class="small-10 columns">
+            <p>
+              <span class="p-headline">Bavaria Studios</span><br>
+              Bavariafilmplatz 7<br>
+              82031 Grünwald
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-2 columns">
+            <img class="picto" style="max-width: 43px;padding: 7px 4px 0px 12px;" src="/img/juk//picto/car_pink.jpg">
+          </div>
+          <div class="small-10 columns">
+            <p>
+              <span class="p-headline">Parkmöglichkeiten</span><br>
+              Auf dem Gelände der Bavaria Studios stehen Besucherparkplätze zur Verfügung.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-2 columns">
+            <img class="picto" style="max-width: 43px;padding: 7px 4px 0px 12px;" src="/img/juk//picto/train_pink.jpg">
+          </div>
+          <div class="small-10 columns">
+            <p>
+              <span class="p-headline">Öffentliche Verkehrsmittel</span><br>
+              Tram 25 Richtung Grünwald, Haltestelle BAVARIAFILMPLATZ.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-2 columns">
+            <img class="picto" style="max-width: 43px;padding: 7px 4px 0px 12px;" src="/img/juk//picto/flyer_pink.jpg">
+          </div>
+          <div class="small-10 columns">
+            <p>
+              <span class="p-headline">Wegbeschreibung</span><br>
+            <a href="https://tvtickets.de/images/work/pdfs/Anreise_JuKgP.pdf">Anfahrt zum Studio</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns" style="margin-top: 2.5em">
+        <h2 style="text-transform: uppercase;font-size: 1.4em">Termine</h2>
+        <div class="row columns">
+                   </div>
+      </div>
+    </div>
+    <div class="row enlarge-row" style="padding-top: 1em;padding-bottom: 4em">
+      <div class="columns" style="padding-bottom: 2em">
+        <img style="width: 100%;height: auto;" src="/img/juk/dudw-1.jpg">
+      </div>
+      <div class="medium-6 large-6 columns">
+        <p style="display: flex; justify-content: center;align-content: center; background-color: #2f9ee2;color:white;height: ; width: 100%;font-size: 0.8em;margin-bottom: 0em">Bavaria Studios</p>
+        <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.212234497070314%2C47.92485504146582%2C11.885147094726564%2C48.21003212234042&amp;layer=mapnik&amp;marker=48.06764110110543%2C11.548690795898438"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=48.0676&amp;mlon=11.5487#map=12/48.0676/11.5487">View Larger Map</a></small>
+      </div>
+    </div>
+
+
+<!-- eTicker Anmeldung -->
+
+  <div id="eticker-juk-s" class="row row-full" style="background-color: #141618;padding-top: 2em">&nbsp;</div>
+  <div class="row row-full" style="background-color: #141618;padding-top: 1em">
+    <div class="small-1 columns">&nbsp;</div>
+    <div class="small-10 columns" style="text-align: center; background-color: #fff">
+      <h1 style="font-size: 1.3em;padding-top: 1em">HIER EINTRAGEN – eTicker (Newsletter)</h1><br>
+      <p style="font-size:14px;line-height: 1.5em;font-weight: normal;letter-spacing: 0.05em">
+        für "Das Duell um die Welt", "Joko und Klaas gegen ProSieben" und weitere Shows. (Für "<a href="late-night-berlin.php#eticker-juk-s">Late Night Berlin</a>" bitte separat eintragen)<br>
+        Werde rechtzeitig über weitere Vorverkäufe und Termine rund um alle Shows von Joko und Klaas informiert!
+      </p><br>
+    </div>
+    <div class="small-1 columns">&nbsp;</div>
+  </div>
+  <div class="row row-full" style="background-color: #141618">
+    <div class="small-1 columns">&nbsp;</div>
+    <div class="small-10 columns" style="text-align: center; background-color: #fff"><br>
+      <div style="display: grid;justify-content: center; background-color: #fff">
+       	<form name="myform" autocomplete="off" novalidate action="/duell-um-die-welt.php" method="POST">
+        <input type="email" name="email_s" id="email_s" class="input" placeholder="E-Mail Adresse" data-error-text="Please enter a valid email address" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"/>
+        <input type="text" name="plz_s" id="plz_s" class="input" placeholder="Die ersten beiden Ziffern Ihrer PLZ" data-error-text="Bitte korrekt eingeben" />
+		<input id="sendMessageButton_s" name="sendMessageButton_s" class="button btn-juk-eticker" type="button" value="SPEICHERN" onclick="sendcode_s();">
+        <input type="text" name="code_s" id="code_s" class="input" placeholder="Code aus der E-Mail" data-error-text="Nur Ziffern eingeben" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" style="display:none;"/>
+        <input type="submit" id="submit_florida_s" value="ABONNIEREN" name="submit_florida_s" class="button btn-juk-eticker" style="display:none;cursor: pointer;" />
+		</form>
+      </div>
+    </div>
+    <div class="small-1 columns">&nbsp;</div>
+  </div>
+  <div class="row row-full" style="background-color: #141618">
+    <div class="small-1 columns">&nbsp;</div>
+    <div class="small-10 columns" style="text-align: center; background-color: #fff">
+	<span id="emailsent_s"></span>
+	<br><br><br>
+    <p style="font-size:0.77em;line-height: 1.5em;font-weight: normal;letter-spacing: 0.05em">
+      Hinweise zu der von der Einwilligung mitumfassten Erfolgsmessung, dem Einsatz des Versanddienstleisters Mailchimp, Protokollierung der Anmeldung und deinen Widerrufsrechten erhältst du in unserer <a href="https://tvtickets.de/datenschutz.php"> Datenschutzerklärung</a>.
+    </div>
+    <div class="small-1 columns">&nbsp;</div>
+  </div>
+    </div>
+
+<!-- ENDE small-only -->
+
+<!-- BEGINN medium-up -->
+
+<div class="show-for-medium-up" >
+  <div class="row enlarge-row">
+    <div class="medium-6 large-6 columns" style="margin-top: 7em;z-index: 15;">
+      <div>
+        <img src="/img/juk/dudw_start.jpg">
+      </div>
+    </div>
+    <div class="shift-left-sub medium-6 large-6 columns" style="margin-top: 4em;">
+      <div style="margin-top: 0.5em;margin-left: 0.5em">
+        <h1 style="font-size: 48px;font-weight: 700">Das Duell um die Welt</h1><br>
+        <p style="font-size:1.2em;line-height: 1.5em !important;">
+          <span class="p-header-text">Um alle zukünftigen Infos zu neuen Terminen von Joko und Klaas zu erhalten, trage dich in unseren eTicker ein und sichere dir so als Erster deine Tickets!</span><br>
+        </p>
+        <a href="#eticker-juk-l">
+        <div class="button btn-juk-normal">zum eTicker</div></a>
+      </div>
+    </div>
+  </div>
+  <div class="row enlarge-row" style="background-color: #fff;">
+    <div class="medium-6 large-6 columns" style="margin-top: 7em;padding-right: 60px">
+      <h2 style="text-transform: uppercase;font-size: 24px; font-weight: 700">Das Duell um die Welt - Tickets & Termine</h2>
+      <p>
+        Seit zehn Jahren „Duell um die Welt“ gehen Joko & Klaas an ihr Schmerzgrenzen und darüber hinaus. Nun geht der große Zweikampf in die nächste Runde. In den neuen Folgen des Show-Events "Das Duell um die Welt – Team Joko gegen Team Klaas" schicken Joko Winterscheidt und Klaas Heufer-Umlauf wieder zahlreiche Prominente rund um den Erdball. Ob und wie sehr es die mutigen Promis bereuen, sich in die Dienste von Joko oder Klaas zu stellen, kannst du in den kommenden Folgen vor Ort hautnah miterleben. Zu den waghalsigen Missionen rund um den Erdball treten zwar die jeweiligen Team-Mitglieder von Joko und Klaas an, doch die Entscheidung um den Weltmeistertitel fällt jeweils live im Studio in einem direkten Duell zwischen den beiden Haudegen. Damit während der Show sowie im Finale zwischen Joko und Klaas alles mit rechten Dingen zugeht, führt Moderatorin Jeannine Michaelsen durch die Show. 
+      </p>
+        <div class="row">
+          <div class="medium-1 large-1 small-1" style="padding: 6px 2px 0px 11px;float: left">
+            <img class="picto" style="max-width: 26px" src="/img/juk//picto/triangle_pink.jpg">
+          </div>
+          <div class="medium-11 large-11 small-11 columns">
+            <p>
+              <span class="p-headline">Wichtiger Zusatz</span><br>
+			Eintritt ab 16 Jahren. Unter 16 Jahren kein Einlass.
+              Aufgrund der hohen Nachfrage und im Sinne der Gleichberechtigung ist pro Person/pro Staffel nur ein Besuch möglich. Produktionsbedingt sind nur einmalig bis zu 2 Tickets buchbar. Es gibt erhöhte Sicherheitskontrollen, so dass keine Jacken, Taschen, Handys als auch Fotoapparate mit ins Studio genommen werden dürfen und müssen an der Garderobe abgegeben werden. Wir bitten um euer Verständnis. 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-1 large-1 small-1" style="padding: 6px 2px 0px 11px;float: left">
+            <img class="picto" style="max-width: 26px" src="/img/juk//picto/heart_pink.jpg">
+          </div>
+          <div class="medium-11 large-11 small-11 columns">
+            <p style="font-size:0.9em;line-height: 1.5em;font-weight: normal;letter-spacing: 0.05em;">
+              <span class="p-headline">Für den Besuch im Studio gilt folgende Regel:</span><br>
+              Es gelten weder auf dem Studiogelände noch im Studio Beschränkungen.<br>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-1 large-1 small-1" style="padding: 6px 2px 0px 11px;float: left">
+            <img class="picto" style="max-width: 21px" src="/img/juk/picto/needle_pink.jpg">
+          </div>
+          <div class="medium-11 large-11 small-11 columns">
+            <p>
+              <span class="p-headline">Bavaria Studios</span><br>
+              Bavariafilmplatz 7<br>
+              82031 Grünwald
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-1 large-1 small-1" style="padding: 6px 2px 0px 11px;float: left">
+            <img class="picto" style="max-width: 23px"  src="/img/juk/picto/car_pink.jpg">
+          </div>
+          <div class="medium-11 large-11 small-11 columns">
+            <p>
+              <span class="p-headline">Parkmöglichkeiten</span><br>
+              Auf dem Gelände der Bavaria Studios stehen Besucherparkplätze zur Verfügung.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-1 large-1 small-1" style="padding: 6px 2px 0px 11px;float: left">
+            <img class="picto" style="max-width: 23px"  src="/img/juk/picto/train_pink.jpg">
+          </div>
+          <div class="medium-11 large-11 small-11 columns">
+            <p>
+              <span class="p-headline">Öffentliche Verkehrsmittel</span><br>
+              Tram 25 Richtung Grünwald,<br>
+              Haltestelle BAVARIAFILMPLATZ.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-1 large-1 small-1" style="padding: 6px 2px 0px 11px;float: left">
+            <img class="picto" style="max-width: 23px"  src="/img/juk/picto/flyer_pink.jpg">
+          </div>
+          <div class="medium-11 large-11 small-11 columns">
+            <p>
+              <span class="p-headline">Wegbeschreibung</span><br>
+            <a href="https://tvtickets.de/images/work/pdfs/Anreise_DDUDW.pdf">Anfahrt zum Studio</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="medium-6 large-6 columns" style="margin-top: 7em">
+        <h2 style="text-transform: uppercase;font-size: 1.4em">Termine</h2>
+        <div class="row">
+                 
+          
+       </div>
+    </div>
+  </div>
+    <div class="row enlarge-row" style="padding-top: 1em;padding-bottom: 4em">
+      <div class="medium-3 large-3 columns">
+        <img src="/img/juk/dudw-1.jpg">
+      </div>
+      <div class="medium-3 large-3 columns">
+        <img src="/img/juk/dudw-2.jpg">
+      </div>
+      <div class="medium-6 large-6 columns">
+        <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.212234497070314%2C47.92485504146582%2C11.885147094726564%2C48.21003212234042&amp;layer=mapnik&amp;marker=48.06764110110543%2C11.548690795898438" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=48.0676&amp;mlon=11.5487#map=12/48.0676/11.5487">View Larger Map</a></small>
+      </div>
+    </div>
+
+
+<!-- eTicker Anmeldung -->
+
+  <div id="eticker-juk-l" class="row row-full" style="background-color: #000;padding-top: 2em">&nbsp;</div>
+  <div class="row row-full" style="background-color: #141618;padding-top: 1em">
+    <div class="large-2 small-2 medium-2 columns">&nbsp;</div>
+    <div class="large-8 small-8 medium-8 columns" style="text-align: center; background-color: #fff">
+      <h1 style="font-size: 1.3em;padding-top: 1em">HIER EINTRAGEN – eTicker (Newsletter)</h1><br>
+      <p style="font-size:15px;line-height: 1.5em;font-weight: 400;letter-spacing: 0.05em">
+        für "Das Duell um die Welt", "Joko und Klaas gegen ProSieben" und weitere Shows. (Für "<a href="late-night-berlin.php#eticker-juk-l">Late Night Berlin</a>" bitte separat eintragen)<br><br>
+        Werde rechtzeitig über weitere Vorverkäufe und Termine rund um alle Shows von Joko und Klaas informiert!
+      </p><br>
+    </div>
+    <div class="large-2 small-2 medium-2 columns">&nbsp;</div>
+  </div>
+  <div class="row row-full" style="background-color: #141618">
+    <div class="large-2 small-2 medium-2 columns">&nbsp;</div>
+    <div class="large-8 small-8 medium-8 columns" style="text-align: center; background-color: #fff"><br>
+      <div style="display: grid;justify-content: center; background-color: #fff">
+    	<form name="myform" autocomplete="off" novalidate action="/duell-um-die-welt.php" method="POST">
+		<input type="email" name="email" id="email" class="input" placeholder="E-Mail Adresse" data-error-text="Please enter a valid email address" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"/>
+        <input type="text" name="plz" id="plz" class="input" placeholder="Die ersten beiden Ziffern Ihrer PLZ" data-error-text="Bitte korrekt eingeben" />
+		<input id="sendMessageButton" name="sendMessageButton" class="button btn-juk-eticker" type="button" value="SPEICHERN" onclick="sendcode();">
+        <input type="text" name="code" id="code" class="input" placeholder="Code aus der E-Mail" data-error-text="Nur Ziffern eingeben" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" style="display:none;"/>
+        <input type="submit" id="submit_florida" value="ABONNIEREN" name="submit_florida" class="button btn-juk-eticker" style="display:none;cursor: pointer;" />
+</form>
+      </div>
+    </div>
+    <div class="large-2 small-2 medium-2 columns">&nbsp;</div>
+  </div>
+  <div class="row row-full" style="background-color: #141618">
+    <div class="large-2 small-2 medium-2 columns">&nbsp;</div>
+    <div class="large-8 small-8 medium-8 columns" style="text-align: center; background-color: #fff">
+	<span id="emailsent"></span>
+	<br><br><br>
+    <p style="font-size:0.77em;line-height: 1.5em;font-weight: normal;letter-spacing: 0.05em">
+      Hinweise zu der von der Einwilligung mitumfassten Erfolgsmessung, dem Einsatz des Versanddienstleisters Mailchimp, Protokollierung der Anmeldung und deinen Widerrufsrechten erhältst du in unserer <a href="https://tvtickets.de/datenschutz.php"> Datenschutzerklärung</a>.
+    </div>
+    <div class="large-2 small-2 medium-2 columns">&nbsp;</div>
+  </div>
+</div>
+ <!-- <div class="row row-full" style="background-color: #000">
+    <div class="large-5 small-5 medium-5 columns" style="background-color: #fff">&nbsp;</div>
+    <div class="large-2 small-2 medium-2 columns" style="background-color: #fff">
+      <input id="email" type="text" name="email" placeholder="E-Mail eingeben" value="" >
+      <span class="button btn-juk-eticker" id="submitemailbutton" style="cursor: pointer;"> abonnieren</span>
+    </div>
+    <input id="use_email" type="hidden" name="use_email" value="">
+    <div class="large-5 small-5 medium-5 columns" style="background-color: #fff">&nbsp;</div>
+  </div>-->
+</div>
+
+
+
+
+<!-- ENDE medium-up -->
+
+
+
+    <script src="js/validator-standalone.js"></script>
+    <script>
+      const myform = document.querySelector("form[name=myform]");
+      myform.addEventListener("submit", function(event) {
+        if(validator.checkForm(event.target)) {
+		    if(document.myform.onsubmit &&
+				!document.myform.onsubmit())
+				{
+					return;
+				}
+			 document.myform.submit();
+        }
+        event.preventDefault();
+      });
+    </script>
+ 
+
+
+
+		</div> 
+		<!-- Footer Start -->
+
+		<!-- facebook plugin begin -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<!-- facebook plugin end -->
+
+
+		<!-- Footer M/L/XL - S steht weiter unten -->
+		<footer class="footer_bg show-for-medium-up">
+		    <div class="row enlarge-row" style="text-align: center;">
+				<div class="large-4 columns left">
+					<h1 class="footer-juk-headline">SHOWS</h1>
+					<p class="footer_navi">
+						<a href="late-night-berlin.php">Late Night Berlin</a><br>
+						<a href="gegen-prosieben.php">Joko & Klaas gegen ProSieben</a><br>
+						<a href="duell-um-die-welt.php">Das Duell um die Welt</a><br>
+						<a href="wer-stiehlt-mir-die-show.php">Wer stiehlt mir die Show?</a><br>
+					</p>
+				</div>
+
+				<div class="large-4 columns left">
+					<div>
+						<h1 class="footer-juk-headline">SOCIAL MEDIA</h1>
+						<p class="footer_navi">
+							<ul style="list-style-type: none;line-height: 3.6em;">
+								<li style="background-color: #141618;font-size: 0.85em"><a href="//www.facebook.com/TVTiCKETS.de?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-3x fa-fw" style="color: #fff;"></i></a></li>
+								<li style="background-color: #141618;font-size: 0.85em"><a href="//www.instagram.com/tvticketsde/" target="_blank"><i class="fa fa-instagram fa-3x fa-fw" style="color: #fff;"></i></a></li>
+								<li style="background-color: #141618;font-size: 0.85em"><a href="https://www.youtube.com/user/HalliGalliCircus" target="_blank"><i class="fa fa-youtube fa-3x fa-fw" style="color: #fff;"></i></a></li>
+								<li><a class="twitter" href="//twitter.com/TVTICKETSde" target="_blank"></a></li>
+								<li><a class="instagram" href="http://instagram.com/tvticketsde" target="_blank"></a></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="large-4 columns left">
+					<div class="footer_ueber_uns">
+						<h1 class="footer-juk-headline">TVT<span style="text-transform:lowercase">i</span>CKETS.DE</h1>
+						<p class="footer_navi">
+							<a href="tvtickets.de">Mehr TV-Shows</a><br>
+							<a href="impressum.php">Impressum</a><br>
+							<a href="datenschutz.php">Datenschutz</a><br>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="padding-top: 1em;">
+				<div class="large-12 left">
+					<div class="large-4 left" style="display:flex; justify-content: right;">
+						<a href="https://www.floridatv-entertainment.de/"><img style="height: 65px; width: auto" src="/img/logo_floridaTV.png"></a>
+					</div>
+					<div class="large-4 left" style="display:flex; justify-content: center;">
+						<a href="https://www.prosieben.de/tv/joko-und-klaas"><img style="height: 70px; width: auto" src="/img/logo_pro7.png"></a>
+					</div>
+					<div class="large-4 left" style="display:flex; justify-content: left;">
+						<a href="https://tvtickets.de/"><img style="height: 40px; width: auto" src="img/tvtickets-logo-1-s.svg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="text-align: center;padding-top: 5em;padding-bottom: 5em">
+				<div class="large-12">
+					<p style="color: #fff;font-size: 0.77em;font-weight: 400" >© 2022 tvtickets.de. All rights reserved</p>
+				</div>
+			</div>
+
+	    </footer>
+
+		<!-- Footer S -->
+		<footer class="footer_bg show-for-small-only">
+		    <div class="row">
+				<div class="small-12 columns left" style="text-align: center;">
+					<h1 class="footer-juk-headline">SHOWS</h1>
+					<p class="footer_navi">
+						<a href="late-night-berlin.php">Late Night Berlin</a><br>
+						<a href="gegen-prosieben.php">Joko & Klaas gegen ProSieben</a><br>
+						<a href="duell-um-die-welt.php">Das Duell um die Welt</a><br>
+						<a href="wer-stiehlt-mir-die-show.php">Wer stiehlt mir die Show?</a><br>
+					</p>
+			</div>
+			</div>
+			<div class="row" style="margin-top: 2em;">
+				<div class="small-12 columns" style="text-align: center;">
+					<div>
+						<h1 class="footer-juk-headline">SOCIAL MEDIA</h1>
+						<p class="footer_navi">
+							<ul style="list-style-type: none;line-height: 3.6em;">
+								<li style="background-color: #141618;font-size: 0.85em"><a href="//www.facebook.com/TVTiCKETS.de?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-3x fa-fw" style="color: #fff;"></i></a></li>
+								<li style="background-color: #141618;font-size: 0.85em"><a href="//www.instagram.com/tvticketsde/" target="_blank"><i class="fa fa-instagram fa-3x fa-fw" style="color: #fff;"></i></a></li>
+								<li style="background-color: #141618;font-size: 0.85em"><a href="https://www.youtube.com/user/HalliGalliCircus" target="_blank"><i class="fa fa-youtube fa-3x fa-fw" style="color: #fff;"></i></a></li>
+								<li><a class="twitter" href="//twitter.com/TVTICKETSde" target="_blank"></a></li>
+								<li><a class="instagram" href="http://instagram.com/tvticketsde" target="_blank"></a></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+		   </div>
+		   <div class="row">
+				<div class="small-12 columns" style="text-align: center;margin-top: 2em;">
+					<div class="footer_ueber_uns">
+						<h1 class="footer-juk-headline">TVT<span style="text-transform:lowercase">i</span>CKETS.DE</h1>
+						<p class="footer_navi">
+							<a href="tvtickets.de">Mehr TV-Shows</a><br>
+							<a href="impressum.php">Impressum</a><br>
+							<a href="datenschutz.php">Datenschutz</a><br>
+						</p>
+					</div>
+				</div>
+		   </div>
+		   	<div class="row" style="margin-top: 2em;">
+						<div class="small-4 left" style="display:flex; justify-content: right;">
+							<a href="https://www.floridatv-entertainment.de/"><img style="height:2.3em ; width: auto" src="/img/logo_floridaTV.png"></a>
+						</div>
+						<div class="small-4 left" style="display:flex; justify-content: center;">
+							<a href="https://www.prosieben.de/tv/joko-und-klaas"><img style="height:2.5em ; width: auto" src="/img/logo_pro7.png"></a>
+						</div>
+						<div class="small-4 left" style="display:flex; justify-content: left;">
+							<a href="https://tvtickets.de/"><img style="height:1.8em; width: auto" src="/img/tvtickets-logo-1-s.svg"></a>
+						</div>
+			</div>
+			<div class="row">
+				<div class="row" style="text-align: center;padding-top: 3em;padding-bottom: 3em">
+				<div class="small-12">
+					<p style="color: #fff;font-size: 0.77em;font-weight: 400" >© 2021 TVTiCKETS.de. All rights reserved</p>
+				</div>
+			</div>
+	    </footer>
+
+		<script type="text/javascript" language="javascript" src="js/jquery.dotdotdot.js"></script><!-- Ellipis -->
+		<script src="js/jquery.ticker.js" type="text/javascript"></script>
+		<!--<script src="js/site.js" type="text/javascript"></script>-->
+		<script src="js/foundation.min.js"></script>
+			<script>
+			var timer=0;
+			function echeck() 
+			{
+				let email=$('#email').val();	
+				if (email=="")
+					email=$('#email_s').val();	
+				$.post("_emailcheck.php", { email:email }).done(
+					function(data){
+						if (data!="0") {
+							clearInterval(timer);	// first kill timer
+							if (data=="1") {
+								$('#emailsent').html("E-Mail zugestellt, Code aus der E-Mail noch eingeben");
+								$('#emailsent_s').html("E-Mail zugestellt, Code aus der E-Mail noch eingeben");
+							}
+							else
+								alert("FEHLER:\n\nDie E-Mail kam nicht an!\nVielleicht vertippt oder das Postfach voll?");
+						}
+					},"json"
+				);
+
+			}
+			function sendcode() {
+				if (document.getElementById('sendMessageButton').type=='button') {
+					$('#emailsent').html("");
+					let plz=$('#plz').val();
+					if (plz>='0'&&plz<='9') {
+						if ($('#email').val().length>6) {
+							timer=setInterval(echeck,999);
+							$.post("_sendcode.php", {email:$("#email").val()}).done(
+								function(scs) {
+									if (scs=='ok') {
+										document.getElementById('submit_florida').type = 'submit';
+										$('#code').show();
+										$('#sendMessageButton').hide();
+										$('#submit_florida').show();
+									}
+								}, "json"
+							);
+						}
+					}
+					else
+						$('#emailsent').html("PLZ falsch.");
+
+				}
+			}
+			function sendcode_s() {
+				if (document.getElementById('sendMessageButton_s').type=='button') {
+					$('#emailsent_s').html("");
+					let plz=$('#plz_s').val();
+					if (plz>='0'&&plz<='9') {
+						if ($('#email_s').val().length>6) {
+							timer=setInterval(echeck,999);
+							$.post("_sendcode.php", {email:$("#email_s").val()}).done(
+								function(scs) {
+									if (scs=='ok') {
+										document.getElementById('submit_florida_s').type = 'submit';
+										$('#code_s').show();
+										$('#sendMessageButton_s').hide();
+										$('#submit_florida_s').show();
+									}
+								}, "json"
+							);
+						}
+					}
+					else
+						$('#emailsent').html("PLZ falsch.");
+				}
+			}
+			</script>		
+			<script>
+			$(document).foundation();
+			if (typeof $.fn.bxSlider == 'function') {	// check existence: jquery.bxslider.js is not included in every *.php
+				$('.bxslider').bxSlider({
+					mode: 'fade',
+					auto: true,
+					autoControls: false,
+					loopInfinitely: true,
+					speed: 500
+				});
+			}
+		</script>
+		<script src="js/customfunctions.js"></script>
+	</div> <!-- Close responsive page div -->
+  </body>
+</html>
